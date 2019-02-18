@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+motion_api:
+    resource: "@MotionAPIBundle/Resources/config/routing.yml"
+
+#_acme_demo:
+#    resource: "@AcmeDemoBundle/Resources/config/routing.yml"

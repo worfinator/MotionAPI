@@ -1,0 +1,23 @@
+motion_UI:
+    path: /motion
+    defaults: { _controller: MotionAPIBundle:API:index }
+
+motion_setStatus:
+    path: /motion/set/{status}
+    defaults: { _controller: MotionAPIBundle:API:setStatus, status: "" }
+
+motion_getStatus:
+    path: /motion/status
+    defaults: { _controller: MotionAPIBundle:API:getStatus }
+
+motion_clear:
+    path: /motion/clear/{type}
+    defaults: { _controller: MotionAPIBundle:API:clear, type: "local" }
+
+motion_lock:
+    path: /motion/lock
+    defaults: { _controller: MotionAPIBundle:API:lock, type: "local" }
+
+motion_unlock:
+    path: /motion/unlock
+    defaults: { _controller: MotionAPIBundle:API:unlock, type: "local" }
